@@ -46,5 +46,14 @@
             layers = <DEF LOW RSE MED>;
         };
 
+        /* Media layer activation - inner thumb keys */
+        combo_media_layer {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+            key-positions = <31 32>; // LH0 RH0 (inner thumb keys)
+            bindings = <&mo 3>;  // Momentary activation of media layer
+            layers = <DEF LOW RSE>;
+        };
+
     };
 };
