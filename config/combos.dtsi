@@ -21,8 +21,6 @@
 // LB4=20 LB3=21 LB2=22 LB1=23 LB0=24 | RB0=25 RB1=26 RB2=27 RB3=28 RB4=29
 //        LH1=30 LH0=31                |        RH0=32 RH1=33
 
-#define COMBO_TERM_FAST 18
-#define COMBO_TERM_SLOW 30
 
 #define COMBO_IDLE_FAST 150
 #define COMBO_IDLE_SLOW 50
@@ -39,7 +37,7 @@
 
         /* Critical layer activation - dual thumb cluster */
         combo_critical_layer {
-            timeout-ms = <COMBO_TERM_SLOW>;
+            timeout-ms = <100>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <30 33>; // LH1 RH1 (outer thumb keys)
             bindings = <&mo 4>;  // Momentary activation of critical layer
@@ -48,7 +46,7 @@
 
         /* Media layer activation - inner thumb keys */
         combo_media_layer {
-            timeout-ms = <COMBO_TERM_SLOW>;
+            timeout-ms = <100>;  // Longer timeout for sequential pressing
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
             key-positions = <31 32>; // LH0 RH0 (inner thumb keys)
             bindings = <&mo 3>;  // Momentary activation of media layer
