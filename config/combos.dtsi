@@ -53,13 +53,12 @@
             layers = <DEF LOW RSE>;
         };
 
-        /* Tab combo - E + R */
         combo_tab {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <2 12>; // E + R
+            key-positions = <16 18>;
             bindings = <&kp TAB>;
-            layers = <DEF>;
+            layers = <DEF LOW RSE>;
         };
 
     };
