@@ -78,7 +78,7 @@
         &kp LBKT        &kp N7      &kp N8        &kp N9      &kp RBKT          &kp PIPE &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR
         &kp LBRC       &kp N4       &kp N5       &kp N6       &kp RBRC        &kp EQUAL   &kp DOLLAR   &kp PRCNT &kp CARET &kp PIPE
         &kp GRAVE       &kp N1       &kp N2       &kp N3       &kp BSLH         &kp TILDE   &kp EXCL   &kp AT &kp HASH &kp BSLH
-        &lt N0 4 &kp ESC       &lt TAB 3 &kp TAB
+        &kp N0 &kp ESC       &trans &kp TAB
       >;
     };
 
@@ -88,7 +88,7 @@
         &trans   &trans &trans   &trans   &trans                              &kp EQUAL &kp PLUS &kp MINUS &kp UNDER &trans
         &trans   &trans &trans   &trans   &trans                              &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp PIPE
         &trans &trans &trans &trans &trans                                      &kp SEMI &kp COLON  &kp LESS_THAN  &kp GREATER_THAN &kp BSLH
-        &trans   &kp SPACE   &kp LPAR   &lt RPAR 4
+        &trans   &kp SPACE   &kp LPAR   &kp RPAR
       >;
     };
 
