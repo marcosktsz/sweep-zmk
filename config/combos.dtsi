@@ -52,14 +52,5 @@
             bindings = <&mo 3>;  // Momentary activation of media layer
             layers = <DEF LOW RSE>;
         };
-
-        combo_tab {
-            timeout-ms = <20>;
-            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <16 18>;
-            bindings = <&kp TAB>;
-            layers = <DEF LOW RSE>;
-        };
-
     };
 };
