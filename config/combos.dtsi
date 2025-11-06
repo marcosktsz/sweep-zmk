@@ -39,7 +39,7 @@
         combo_critical_layer {
             timeout-ms = <100>;
             require-prior-idle-ms = <COMBO_IDLE_SLOW>;
-            key-positions = <30 33>; // LH1 RH1 (outer thumb keys)
+            key-positions = <32 33>; // RH0 RH1 (right thumb keys)
             bindings = <&mo 4>;  // Momentary activation of critical layer
             layers = <DEF LOW RSE MED>;
         };
@@ -51,6 +51,15 @@
             key-positions = <31 32>; // LH0 RH0 (inner thumb keys)
             bindings = <&mo 3>;  // Momentary activation of media layer
             layers = <DEF LOW RSE>;
+        };
+
+        /* Tab combo - E + R */
+        combo_tab {
+            timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+            key-positions = <2 12>; // E + R
+            bindings = <&kp TAB>;
+            layers = <DEF>;
         };
 
     };
