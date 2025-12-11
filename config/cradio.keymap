@@ -10,9 +10,9 @@
 #include "combos.dtsi"
 
 &mt {
-  tapping-term-ms = <300>;
   flavor = "hold-preferred";
-  quick-tap-ms = <175>;
+  tapping-term-ms = <280>;
+  quick-tap-ms = <279>;
 };
 
 &lt {
