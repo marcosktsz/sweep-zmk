@@ -52,5 +52,14 @@
             bindings = <&mo 3>;  // Momentary activation of media layer
             layers = <DEF LOW RSE>;
         };
+
+        /* Mouse layer activation - both left thumb clusters */
+        combo_mouse_layer {
+            timeout-ms = <100>;
+            require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+            key-positions = <30 31>; // LH1 LH0 (left thumb keys)
+            bindings = <&mo 5>;  // Momentary activation of mouse layer
+            layers = <DEF LOW RSE MED>;
+        };
     };
 };
